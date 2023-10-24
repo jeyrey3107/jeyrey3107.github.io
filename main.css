@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url('usedfiles/back.jpg'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+    background-image: url('usedfiles/back.png'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
     background-size: cover; /* Couvre tout le contenu de la page */
     background-repeat: no-repeat; /* Pas de répétition de l'image */
     font-family: 'Sofia Sans', sans-serif;
