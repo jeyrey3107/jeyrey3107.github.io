@@ -5,7 +5,9 @@ body {
     background-repeat: no-repeat; /* Pas de répétition de l'image */
     font-family: 'Sofia Sans', sans-serif;
 }
-
+p{
+        font-size: 1vw;
+}
 a {
     text-decoration: none;
     color: white;
@@ -111,9 +113,11 @@ h1:hover {
 
 h2{
     color:#fcc700 ;
+    font-size: 3vw;
 }
 h3{
     color:#009dff ;
+    font-size: 2vw;
 }
 
 .remi {
