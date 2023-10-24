@@ -19,7 +19,7 @@ a {
     box-shadow: 0em 1em 4em grey;
     display: flex;
     justify-content: space-between;
-    margin-left: 5%;
+    padding-left: 5%;
     padding-right: 5%;
     font-size: 1.2vw;
 }
