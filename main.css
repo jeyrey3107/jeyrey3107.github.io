@@ -10,7 +10,7 @@ body {
 }
 
 p {
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 a {
@@ -27,7 +27,7 @@ a {
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 0%;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .menu {
@@ -35,7 +35,7 @@ a {
     color: white;
     display: flex;
     justify-content: space-between;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     width: 40%;
 }
 
@@ -236,7 +236,7 @@ h3 {
         color: white;
         display: block;
         text-align: right;
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         padding: 2%;
         margin-top: 0%;
     }
