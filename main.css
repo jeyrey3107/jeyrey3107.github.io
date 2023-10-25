@@ -41,8 +41,6 @@ a {
 
 .menu-mobile {
     display: none;
-    transform: translateY(-100%);
-    transition: transform 1s;
 }
 
 .name {
@@ -241,8 +239,6 @@ h3 {
         font-size: 1.2vw;
         padding: 2%;
         margin-top: 0%;
-        transform: translateY(0);
-        transition: transform 1s;
     }
 
     /* Afficher le menu burger sur les écrans plus petits (mobile) */
