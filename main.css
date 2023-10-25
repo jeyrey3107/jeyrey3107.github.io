@@ -18,6 +18,7 @@ a {
     color: white;
 }
 
+
 .bandeau {
     background-color: rgb(54, 57, 62);
     color: white;
@@ -41,6 +42,8 @@ a {
 
 .menu-mobile {
     display: none;
+    transform: translateY(-100%);
+    transition: transform 1s;
 }
 
 .name {
@@ -87,6 +90,7 @@ a {
     padding: 10%;
     padding-bottom: 0%;
     text-align: center;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -150,16 +154,18 @@ h3 {
     color: white;
     padding: 10%;
     text-align: center;
+
 }
 
 .compopetit {
-    width: 20%;
+    width: 25%;
+    height: 25%;
     padding-left: 5%;
 }
 
 .compopetit:hover {
     cursor: pointer;
-    width: 20.1%;
+    width: 25.1%;
 }
 
 .lightbox {
@@ -200,7 +206,21 @@ h3 {
     text-align: center;
 }
 
+.robot{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 
+.icone{
+    width: 25%;
+    height: 20%;
+}
+
+.icone2{
+    width: 45%;
+    height: 20%;
+}
 
 /* Styles pour le menu burger (masqué par défaut) */
 .menu-burger {
@@ -226,11 +246,12 @@ h3 {
  
         /* Transition de rotation de 0.3 seconde */
     }
-
+    .robot{
+        flex-direction: column;
+    }
     .bandeau {
         box-shadow: none;
     }
-
     .menu-mobile.active {
         background-color: rgb(54, 57, 62);
         color: white;
@@ -239,6 +260,8 @@ h3 {
         font-size: 1.5vw;
         padding: 2%;
         margin-top: 0%;
+        transform: translateY(0);
+        transition: transform 1s;
     }
 
     /* Afficher le menu burger sur les écrans plus petits (mobile) */
@@ -247,3 +270,4 @@ h3 {
         margin-top: 1%;
     }
 }
+
