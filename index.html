@@ -37,17 +37,17 @@
         <p><a href="#projets">Mes projets</a></p>
         <!--<p><a href="#CV">CV</a></p>-->
     </div>
-        <script>
-            // Sélectionnez l'élément du menu burger et le menu standard
-            const menuBurger = document.querySelector('.menu-burger');
-            const menu = document.querySelector('.menu-mobile');
+    <script>
+        // Sélectionnez l'élément du menu burger et le menu standard
+        const menuBurger = document.querySelector('.menu-burger');
+        const menu = document.querySelector('.menu-mobile');
 
-            // Attachez un gestionnaire d'événement de clic au menu burger
-            menuBurger.addEventListener('click', () => {
-                // Basculez la classe 'active' sur le menu pour le faire apparaître/disparaître
-                menu.classList.toggle('active');
-            });
-        </script>
+        // Attachez un gestionnaire d'événement de clic au menu burger
+        menuBurger.addEventListener('click', () => {
+            // Basculez la classe 'active' sur le menu pour le faire apparaître/disparaître
+            menu.classList.toggle('active');
+        });
+    </script>
 
     <div class="accueil">
         <p class="title">VAILLANT Rémi</p>
@@ -72,7 +72,7 @@
         <div class="souscom">
             <div>
                 <h3>Web : </h3>
-                <img src="usedfiles/logo web.png" alt="">
+                <img src="usedfiles/logo web.png" alt="iconweb" class="icone">
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>PHP</p>
@@ -80,19 +80,19 @@
             </div>
             <div style="margin:0.8%;">
                 <h3>Mobile :</h3>
-                <img src="usedfiles/logo mobile.png" alt="">
+                <img src="usedfiles/logo mobile.png" alt="iconmobile" class="icone">
                 <p>Kotlin</p>
                 <p>AndroidStudio</p>
                 <p>Unity(Réalité augementé)</p>
             </div>
             <div style="margin:1%;">
                 <h3>UI/UX :</h3>
-                <img src="usedfiles/figmalogo.png" alt="">
+                <img src="usedfiles/figmalogo.png" alt="iconfigma" class="icone2">
                 <p>Figma</p>
             </div>
             <div style="margin:0.8%;">
                 <h3>Autres :</h3>
-                <img src="usedfiles/autre.png" alt="">
+                <img src="usedfiles/autre.png" alt="iconautre" class="icone2">
                 <p>Java</p>
                 <p>Python</p>
                 <p>C#(Unity)</p>
@@ -103,20 +103,20 @@
         <div class="souscom">
             <div class="espace">
                 <h3>Communication :</h3>
-                <img src="usedfiles/communication.png" alt="">
+                <img src="usedfiles/communication.png" alt="iconcom" class="icone">
                 <p>Très à l'aise à l'oral, j'aime interagir avec mon auditoire. Tout au long de mes études, j'ai su
                     rattraper les faiblesses qu'on pu avoir certains travaux par mon aisance à l'oral.</p>
             </div>
             <div class="espace">
                 <h3>Travail d'équipe :</h3>
-                <img src="usedfiles/teamwork.png" alt="">
+                <img src="usedfiles/teamwork.png" alt="icontw" class="icone">
                 <p>J'aime le travail d'équipe et y apporter de la bonne humeur car je pense qu'un environnement agréable
                     améliore la qualité du travail. Etant habitué au travail d'équipe ainsi, je suis à l'aise avec des
                     outils tels que git/github ou perforce</p>
             </div>
             <div class="espace">
                 <h3>Créativité :</h3>
-                <img src="usedfiles/creativité.png" alt="">
+                <img src="usedfiles/creativité.png" alt="iconcrea" class="icone">
                 <p>Bien que cette dernière ne soit pas forcément toujours requise, j'aime rechercher l'innovation et
                     ainsi apporter des idées originales dans tout ce que je fais.</p>
             </div>
@@ -141,42 +141,47 @@
             <p>Ceci est la carte de visite d'une société fictive de bras robots avec au recto une présentation d'un des
                 produits de l'entreprise et au verso la présentation de l'employé à qui appartient la carte lui
                 permettant à la fois de présenter son entreprise et de se présenter lui-même.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OOmf3ikk1nI?"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W5LXKI8YGrs?    "
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div class="robot">
+                <iframe width="80%" height="300" src="https://www.youtube.com/embed/OOmf3ikk1nI?"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="padding: 5%;"></iframe>
+                <iframe width="80%" height="300" src="https://www.youtube.com/embed/W5LXKI8YGrs?    "
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="padding: 5%;"></iframe>
+            </div>
         </div>
         <div>
             <h2 style="padding-top: 5%;">Figma :</h2>
             <p>Premier exemple : toute les icones de ce site ont été créé à la main sur figma (hormis les logos
                 figma,python et java)</p>
-            <img src="usedfiles/UX.png" alt="">
+            <img src="usedfiles/UX.png" alt="dada" style="width: 50%;">
             <p>Voici ici un exemple de projet figma respectant des contraintes de couleurs et les règles d'utilisation
                 de figma en milieu professionnel</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/90Zc3-xudDQ?"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <img src="usedfiles/Composant.png" alt="Image à agrandir" id="image-zoom" class="compopetit">
+            <div style="display: flex; align-items:center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/90Zc3-xudDQ?"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="padding: 5%;"></iframe>
+                <img src="usedfiles/Composant.png" alt="Image à agrandir" id="image-zoom" class="compopetit">
+            </div>
             <div class="lightbox" id="image-lightbox">
                 <img src="usedfiles/Composant.png" alt="Image agrandie">
             </div>
+
         </div>
 
         <div>
             <h2 style="padding-top: 5%;">UnrealEngine :</h2>
             <p>Jeu PACMAN avec travail sur l'IA des fantômes dont les comportements sont les mêmes que le jeu original
                 ainsi que le one-pager réalisé sur figma</p>
-            <div style="display: flex;">
+            <div style="display: flex; align-items:center;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/yUxwzh7noZc?"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen style="padding: 5%;"></iframe>
-                <img src="usedfiles/OnePager.png" alt="">
+                <img src="usedfiles/OnePager.png" alt="" style="width: 25%; height:25%;">
             </div>
         </div>
 
