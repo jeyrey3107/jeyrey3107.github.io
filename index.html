@@ -6,21 +6,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sofia+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sofia+Sans:wght@500&display=swap"
+        rel="stylesheet">
 
     <meta charset="UTF-8" />
 </head>
 
 <body>
+
     <div class="bandeau">
         <p class="name">Rémi vaillant
         <p>
+        <div class="menu">
+            <p><a href="#apropos">A propos</a></p>
+            <p><a href="#competences">Mes compétences</a></p>
+            <p><a href="#diplome">Diplômes</a></p>
+            <p><a href="#projets">Mes projets</a></p>
+            <!--<p><a href="#CV">CV</a></p>-->
+        </div>
+        <div class="menu-burger">
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+        </div>
+    </div>
+    <div class="menu-mobile">
         <p><a href="#apropos">A propos</a></p>
         <p><a href="#competences">Mes compétences</a></p>
         <p><a href="#diplome">Diplômes</a></p>
         <p><a href="#projets">Mes projets</a></p>
         <!--<p><a href="#CV">CV</a></p>-->
     </div>
+        <script>
+            // Sélectionnez l'élément du menu burger et le menu standard
+            const menuBurger = document.querySelector('.menu-burger');
+            const menu = document.querySelector('.menu-mobile');
+
+            // Attachez un gestionnaire d'événement de clic au menu burger
+            menuBurger.addEventListener('click', () => {
+                // Basculez la classe 'active' sur le menu pour le faire apparaître/disparaître
+                menu.classList.toggle('active');
+            });
+        </script>
+
     <div class="accueil">
         <p class="title">VAILLANT Rémi</p>
         <p class="subtitle">Etudiant en informatique</p>
@@ -30,7 +58,11 @@
         <img src="usedfiles/Remi.jpg" class="remi" />
         <div style="width: 60%;margin-left:5%;">
             <h1>A propos</h1>
-            <p>Je suis étudiant en 5ème année à l'ENSIM ( Ecole Nationale Supérieur des Ingénieur du Mans) en filière informatique spécialité IPS ( Intéraction Personne-Système ). Je suis actuellement au Canada dans le cadre d'un semestre à l'étranger que j'effectue à l'UQAC ( Université du Quebec A Chicoutimi ) pour le trimestre d'automne qui dure de septembre à décembre. Je cherche à travailler dans les domaines du mobile tels que la création d'applications classiques ou en réalité augmentée ou dans le web.
+            <p>Je suis étudiant en 5ème année à l'ENSIM ( Ecole Nationale Supérieur des Ingénieur du Mans) en filière
+                informatique spécialité IPS ( Intéraction Personne-Système ). Je suis actuellement au Canada dans le
+                cadre d'un semestre à l'étranger que j'effectue à l'UQAC ( Université du Quebec A Chicoutimi ) pour le
+                trimestre d'automne qui dure de septembre à décembre. Je cherche à travailler dans les domaines du
+                mobile tels que la création d'applications classiques ou en réalité augmentée ou dans le web.
             </p>
         </div>
     </div>
@@ -38,15 +70,20 @@
         <h1>Compétences</h1>
         <h2>HardSkills</h2>
         <div class="souscom">
-            <div >
+            <div>
                 <h3>Web : </h3>
                 <img src="usedfiles/logo web.png" alt="">
-                <p>HTML</p><p>CSS</p><p>PHP</p><p>Frameworks(DJango,Angular,Spring)</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>PHP</p>
+                <p>Frameworks(DJango,Angular,Spring)</p>
             </div>
             <div style="margin:0.8%;">
                 <h3>Mobile :</h3>
                 <img src="usedfiles/logo mobile.png" alt="">
-                <p>Kotlin</p><p>AndroidStudio</p><p>Unity(Réalité augementé)</p>
+                <p>Kotlin</p>
+                <p>AndroidStudio</p>
+                <p>Unity(Réalité augementé)</p>
             </div>
             <div style="margin:1%;">
                 <h3>UI/UX :</h3>
@@ -56,7 +93,10 @@
             <div style="margin:0.8%;">
                 <h3>Autres :</h3>
                 <img src="usedfiles/autre.png" alt="">
-                <p>Java</p><p>Python</p><p>C#(Unity)</p><p>C++(UnrealEngine)</p>
+                <p>Java</p>
+                <p>Python</p>
+                <p>C#(Unity)</p>
+                <p>C++(UnrealEngine)</p>
             </div>
         </div>
         <h2>SoftSkills</h2>
@@ -64,17 +104,21 @@
             <div class="espace">
                 <h3>Communication :</h3>
                 <img src="usedfiles/communication.png" alt="">
-                <p>Très à l'aise à l'oral, j'aime interagir avec mon auditoire. Tout au long de mes études, j'ai su rattraper les faiblesses qu'on pu avoir certains travaux par mon aisance à l'oral.</p>
+                <p>Très à l'aise à l'oral, j'aime interagir avec mon auditoire. Tout au long de mes études, j'ai su
+                    rattraper les faiblesses qu'on pu avoir certains travaux par mon aisance à l'oral.</p>
             </div>
             <div class="espace">
                 <h3>Travail d'équipe :</h3>
                 <img src="usedfiles/teamwork.png" alt="">
-                <p>J'aime le travail d'équipe et y apporter de la bonne humeur car je pense qu'un environnement agréable améliore la qualité du travail. Etant habitué au travail d'équipe ainsi, je suis à l'aise avec des outils tels que git/github ou perforce</p>
+                <p>J'aime le travail d'équipe et y apporter de la bonne humeur car je pense qu'un environnement agréable
+                    améliore la qualité du travail. Etant habitué au travail d'équipe ainsi, je suis à l'aise avec des
+                    outils tels que git/github ou perforce</p>
             </div>
             <div class="espace">
                 <h3>Créativité :</h3>
                 <img src="usedfiles/creativité.png" alt="">
-                <p>Bien que cette dernière ne soit pas forcément toujours requise, j'aime rechercher l'innovation et ainsi apporter des idées originales dans tout ce que je fais.</p>
+                <p>Bien que cette dernière ne soit pas forcément toujours requise, j'aime rechercher l'innovation et
+                    ainsi apporter des idées originales dans tout ce que je fais.</p>
             </div>
         </div>
     </div>
@@ -93,30 +137,47 @@
     <div class="projets" id="projets">
         <h1>Mes projets</h1>
         <div>
-            <h2  style="padding-top: 5%;">Réalité Augementé :</h2>
-            <p>Ceci est la carte de visite d'une société fictive de bras robots avec au recto une présentation d'un des produits de l'entreprise et au verso la présentation de l'employé à qui appartient la carte lui permettant à la fois de présenter son entreprise et de se présenter lui-même.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OOmf3ikk1nI?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W5LXKI8YGrs?    " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2 style="padding-top: 5%;">Réalité Augementé :</h2>
+            <p>Ceci est la carte de visite d'une société fictive de bras robots avec au recto une présentation d'un des
+                produits de l'entreprise et au verso la présentation de l'employé à qui appartient la carte lui
+                permettant à la fois de présenter son entreprise et de se présenter lui-même.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OOmf3ikk1nI?"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W5LXKI8YGrs?    "
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
         <div>
             <h2 style="padding-top: 5%;">Figma :</h2>
-            <p>Premier exemple : toute les icones de ce site ont été créé à la main sur figma (hormis les logos figma,python et java)</p>
+            <p>Premier exemple : toute les icones de ce site ont été créé à la main sur figma (hormis les logos
+                figma,python et java)</p>
             <img src="UX.png" alt="">
-            <p>Voici ici un exemple de projet figma respectant des contraintes de couleurs et les règles d'utilisation de figma en milieu professionnel</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/90Zc3-xudDQ?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Voici ici un exemple de projet figma respectant des contraintes de couleurs et les règles d'utilisation
+                de figma en milieu professionnel</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/90Zc3-xudDQ?"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             <img src="usedfiles/Composant.png" alt="Image à agrandir" id="image-zoom" class="compopetit">
             <div class="lightbox" id="image-lightbox">
                 <img src="usedfiles/Composant.png" alt="Image agrandie">
             </div>
         </div>
-        <script src="script.js"></script>
+
         <div>
-            <h2  style="padding-top: 5%;">UnrealEngine :</h2>
-            <p>Jeu PACMAN avec travail sur l'IA des fantômes dont les comportements sont les mêmes que le jeu original ainsi que le one-pager réalisé sur figma</p>
-           <div style="display: flex;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yUxwzh7noZc?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="padding: 5%;"></iframe>
-            <img src="usedfiles/OnePager.png" alt="">
-            </div> 
+            <h2 style="padding-top: 5%;">UnrealEngine :</h2>
+            <p>Jeu PACMAN avec travail sur l'IA des fantômes dont les comportements sont les mêmes que le jeu original
+                ainsi que le one-pager réalisé sur figma</p>
+            <div style="display: flex;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yUxwzh7noZc?"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="padding: 5%;"></iframe>
+                <img src="usedfiles/OnePager.png" alt="">
+            </div>
         </div>
 
     </div>
@@ -126,6 +187,7 @@
     <a href="c:\Users\rem31\Documents\cv\CV_Rémi_VAILLANT.pdf" download="CV_Rémi_VAILLANT.pdf">Télécharger le PDF</a>
     
     </div>-->
+    <script src="script.js"></script>
 </body>
 
 </html>
