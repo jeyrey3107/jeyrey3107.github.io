@@ -1,13 +1,18 @@
 body {
     margin: 0;
-    background-image: url('usedfiles/back.png'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
-    background-size: cover; /* Couvre tout le contenu de la page */
-    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-image: url('usedfiles/back.png');
+    /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+    background-size: cover;
+    /* Couvre tout le contenu de la page */
+    background-repeat: no-repeat;
+    /* Pas de répétition de l'image */
     font-family: 'Sofia Sans', sans-serif;
 }
-p{
-        font-size: 1vw;
+
+p {
+    font-size: 1vw;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -21,7 +26,23 @@ a {
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 12%;
+    margin-top: 0%;
+    font-size: 1.2vw;
+}
+
+.menu {
+    background-color: rgb(54, 57, 62);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    width: 40%;
+}
+
+.menu-mobile {
+    display: none;
+    transform: translateY(-100%);
+    transition: transform 1s;
 }
 
 .name {
@@ -100,24 +121,25 @@ h1 {
     font-family: 'Amatic SC', sans-serif;
     font-size: 4vw;
     color: white;
-    text-shadow:0.03em 0.03em 0.075em #009dff,
-    -0.03em -0.03em 0.075em #fcc700;
+    text-shadow: 0.03em 0.03em 0.075em #009dff,
+        -0.03em -0.03em 0.075em #fcc700;
 }
 
 h1:hover {
     font-family: 'Amatic SC', sans-serif;
     font-size: 4vw;
     color: white;
-    text-shadow:-0.03em -0.03em 0.075em #009dff,
-    0.03em 0.03em 0.075em #fcc700;
+    text-shadow: -0.03em -0.03em 0.075em #009dff,
+        0.03em 0.03em 0.075em #fcc700;
 }
 
-h2{
-    color:#fcc700 ;
+h2 {
+    color: #fcc700;
     font-size: 3vw;
 }
-h3{
-    color:#009dff ;
+
+h3 {
+    color: #009dff;
     font-size: 2vw;
 }
 
@@ -131,14 +153,17 @@ h3{
     padding: 10%;
     text-align: center;
 }
-.compopetit{
+
+.compopetit {
     width: 20%;
     padding-left: 5%;
 }
-.compopetit:hover{
+
+.compopetit:hover {
     cursor: pointer;
     width: 20.1%;
 }
+
 .lightbox {
     display: none;
     position: fixed;
@@ -161,18 +186,68 @@ h3{
     bottom: 0;
 }
 
-.espace{
+.espace {
     margin: 0.8%;
     width: 25%;
 }
-.espace2{
+
+.espace2 {
     margin: 0.8%;
     width: 15%;
 }
 
-.CV{
+.CV {
     color: white;
     padding: 10%;
     text-align: center;
 }
 
+
+
+/* Styles pour le menu burger (masqué par défaut) */
+.menu-burger {
+    display: none;
+    /* Masquer le menu burger par défaut */
+    cursor: pointer;
+}
+
+/* Styles pour les barres du menu burger (lignes horizontales) */
+.burger-bar {
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 2px 0;
+}
+
+/* Utilisez les médias CSS pour basculer entre les menus en fonction de la largeur de l'écran (mobile vs. PC) */
+@media (max-width: 768px) {
+
+    /* Masquer le menu standard sur les écrans plus petits (mobile) */
+    .menu {
+        display: none;
+ 
+        /* Transition de rotation de 0.3 seconde */
+    }
+
+    .bandeau {
+        box-shadow: none;
+    }
+
+    .menu-mobile.active {
+        background-color: rgb(54, 57, 62);
+        color: white;
+        display: block;
+        text-align: right;
+        font-size: 1.2vw;
+        padding: 2%;
+        margin-top: 0%;
+        transform: translateY(0);
+        transition: transform 1s;
+    }
+
+    /* Afficher le menu burger sur les écrans plus petits (mobile) */
+    .menu-burger {
+        display: block;
+        margin-top: 1%;
+    }
+}
